@@ -1,0 +1,106 @@
+body{
+	background:none;
+}
+
+.container{
+	margin: auto;
+	background:none;
+}
+
+.errors{
+	margin:40px 0 0 180px;
+	text-align:left;
+	color:#FF6600;
+	font-size:13px;	
+	font-family: "Anton", arial, sans-serif;
+}
+
+.intro{
+	margin:8px 340px;
+	text-align:left;
+}
+
+#message{
+	background:#FF6600;
+	color:#FFF;
+}
+
+form ul {
+  list-style-type:none;
+}
+
+form ul li {
+  list-style-type: none;
+}
+
+form ul li label {
+  margin-right: 30px;
+}
+
+form input {
+  width: 300px;
+}
+
+#ul-table li a { 
+  background-color:#F4F7FA;
+  font: 12px Arial, sans-serif;
+  display:block;
+  line-height:20px;
+}
+#ul-table a:link, #ul-table a:visited, #ul-table a:active {
+  color: #555; text-decoration: none;
+}
+#ul-table {
+/*  background-color:#CCD9E9; */
+  color:navy;
+  text-decoration: none;
+}
+#ul-table {
+/*  width:960px;*/
+  text-align:center;
+  margin: 0px auto;
+  padding:0;
+  color: navy;
+  list-style-type:none;
+  clear:both;
+}
+#ul-table li {
+  width: 139px;
+  float:left;
+/*  border:1px solid #eee; */
+/*  border-right:none;*/
+  text-align: center; 
+  padding: 0px 4px 0px 0px;
+} 
+* html #ul-table li a {
+  width: 100%;
+} 
+#ul-table li.top {
+  border-bottom:none;
+} 
+#ul-table li.right {
+  border-right:1px solid #eee;
+}
+.clear {
+  clear:both;
+  margin-top:-1px;
+  height:1px;
+  overflow:hidden;
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.nav {
+/*  text-align: center;*/
+  margin: 5px 0px 5px 0px;
+}
+
+.nav .nav-text {
+  margin: 0px 5px 0px 20px;
+  font-size: 12px;
+}

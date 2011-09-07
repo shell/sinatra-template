@@ -1,0 +1,25 @@
+%h1 Listing products
+
+- unless @products.empty?
+  %div.nav
+    %a(class="prev browse left")
+    %span.nav-text
+      %span#page_number 1 
+      of 
+      = (@products.count / PER_PAGE).round + 1
+    %a(class="next browse right")
+  .scrollable
+    .items
+      - @products.in_groups_of(PER_PAGE) do |group|
+        %div
+          - group.compact.each do |product|
+            .item
+              %a(href="#{product.link}" id="product_#{product.id}")
+                %img(src="#{product.image_url}")
+                %br
+                %span= product.title
+  
+  .clear
+- else
+  No products found
+%br

@@ -1,0 +1,16 @@
+development:
+  adapter: sqlite3
+  encoding: utf8
+  database: db/development.db
+  
+test:
+  adapter: sqlite3
+  encoding: utf8
+  database: db/test.db
+
+production: 
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: 
+  database: sinatra-template

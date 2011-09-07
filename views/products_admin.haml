@@ -1,0 +1,23 @@
+%h1 Listing products
+
+- unless @products.empty?
+  %table
+    %tr
+      %th Title
+      %th Link
+      %th Image_url
+      %th Category
+      %th Actions
+    - @products.each do |product|
+      %tr
+        %td=product.title
+        %td=product.link
+        %td=product.image_url
+        %td=product.category
+        %td
+          = link_to "/products/#{product.id}/edit", "Edit"
+- else
+  No products found
+
+%br
+%p= link_to "/products/new", "New Product"

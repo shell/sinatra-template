@@ -1,0 +1,16 @@
+%h1 Listing categories
+
+- unless @categories.empty?
+  %table
+    %tr
+      %th Name
+      %th actions 
+    - @categories.each do |category|
+      %tr
+        %td=category.name
+        %td= link_to "/categories/#{category.id}/edit", "Edit"
+- else
+  No categories found
+
+%br
+%p= link_to "/categories/new", "New Category"

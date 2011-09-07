@@ -1,0 +1,16 @@
+require "autotest/bundler"
+require 'autotest/growl'
+
+Autotest.add_hook(:initialize) {|at|
+  at.clear_mappings
+
+  ['.autotest', '.git','/tmp','/db', '/coverage', 'Gemfile.lock'].each { |exception| 
+    at.add_exception(exception) 
+  }
+
+  at.add_mapping(%r%^.*_spec\.rb$%) {|filename, _| filename }
+
+  at.add_mapping(%r%^.*\.rb$%) {
+    at.files_matching %r%^spec/.*_spec\.rb$%
+  }
+}

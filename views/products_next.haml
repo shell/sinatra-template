@@ -1,0 +1,8 @@
+- unless @products.empty?
+  %div
+    - @products.each do |product|
+      %div.item
+        %a(href="#{product.link}" target="blank" id="#{product.id}")
+          %img(src="#{product.image_url}")
+          %br
+          %span= product.title
