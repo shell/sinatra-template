@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:shell/sinatra-activerecord.git
+  remote: git://github.com/shell/sinatra-activerecord.git
   revision: 4f147aba8e9bd4fd3f321191a2d6ca3974f62345
   specs:
     sinatra-activerecord (0.1.3)
