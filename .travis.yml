@@ -3,5 +3,4 @@ rvm:
   - "1.9.2"
 script:
   - RAILS_ENV=test bundle exec rake --trace db:migrate
-  - bundle exec rake db:test:prepare
   - bundle exec rspec spec/
