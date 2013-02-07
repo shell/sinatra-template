@@ -1,4 +1,4 @@
-# Sinatra Template [![Build Status](https://secure.travis-ci.org/shell/sinatra-template.png)](https://secure.travis-ci.org/shell/sinatra-template.png)
+# Sinatra Template [![Build Status](https://secure.travis-ci.org/shell/sinatra-template.png)](https://secure.travis-ci.org/shell/sinatra-template.png) [![Code Climate](https://codeclimate.com/github/shell/sinatra-template.png)](https://codeclimate.com/github/shell/sinatra-template)
 
 ## About
   Recently I found myself doing a very simple services for my cliens with Sinatra. There is a lot of guides, tutorials and FAQs around the internet. But it seems that there is no good Sinatra template with testing coverate, basic files structure, etc. So I made one.
